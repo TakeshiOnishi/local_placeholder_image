@@ -1,6 +1,27 @@
 {
   "dependencies": {
+    "commander": "^2.20.0",
     "express": "^4.16.4",
     "gm": "^1.23.1"
-  }
+  },
+  "name": "local_placeholder_image",
+  "description": "Used when generating dummy placeholder images in the local environment",
+  "version": "0.0.1",
+  "bin": {
+    "local_placeholder_image": "bin/local_placeholder_image"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TakeshiOnishi/local_placeholder_image.git"
+  },
+  "author": "TakeshiOnishi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TakeshiOnishi/local_placeholder_image/issues"
+  },
+  "homepage": "https://github.com/TakeshiOnishi/local_placeholder_image#readme"
 }

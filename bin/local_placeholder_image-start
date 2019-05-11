@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+'use strict'
+
+const commander = require('commander')
+const LocalPlaceholderImage = require('../lib/local_placeholder_image')
+
+commander
+  .option('-p, --port <value>', 'PORT Number', Number, 9999)
+  .parse(process.argv)
+
+let lpi = new LocalPlaceholderImage(commander.port)
+lpi.start()

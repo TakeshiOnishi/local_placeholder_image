@@ -16,8 +16,15 @@ Used when generating dummy placeholder images in the local environment
 
 ## Usage
 
-1. `yarn` or `npm install`
-1. `node app.js`
+```
+local_placeholder_image start
+
+Options:
+  -p, --port <value>  PORT Number (default: 9999)
+  -h, --help          output usage information
+```
+
+1. `local_placeholder_image start`
 1. Access Image
   + `http://localhost:9999/タイトル/テキスト/300x200.png`
   + `<img src="http://localhost:9999/タイトル/テキスト/300x200.png" />`

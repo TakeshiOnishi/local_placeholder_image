@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+'use strict'
+
+const commander = require('commander')
+
+commander
+  .command('start', 'start local_placeholder_image server')
+  .parse(process.argv)
