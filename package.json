@@ -6,7 +6,7 @@
   },
   "name": "local_placeholder_image",
   "description": "Used when generating dummy placeholder images in the local environment",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bin": {
     "local_placeholder_image": "bin/local_placeholder_image"
   },

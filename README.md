@@ -4,6 +4,8 @@
 
 Used when generating dummy placeholder images in the local environment
 
+[【npm package】](https://www.npmjs.com/package/local_placeholder_image)
+
 ## Demo
 
 ![sample](./sample.png)
@@ -16,6 +18,16 @@ Used when generating dummy placeholder images in the local environment
 
 ## Usage
 
+1. Install `imagemagick` and `graphicsmagick`
+    + For Mac
+        1. `brew install imagemagick`
+        1. `brew install graphicsmagick`
+1. `npm i local_placeholder_image`
+1. `local_placeholder_image start`
+1. Access Image
+    + `http://localhost:9999/タイトル/テキスト/300x200.png`
+    + `<img src="http://localhost:9999/タイトル/テキスト/300x200.png" />`
+
 ```
 local_placeholder_image start
 
@@ -24,10 +36,9 @@ Options:
   -h, --help          output usage information
 ```
 
-1. `local_placeholder_image start`
-1. Access Image
-  + `http://localhost:9999/タイトル/テキスト/300x200.png`
-  + `<img src="http://localhost:9999/タイトル/テキスト/300x200.png" />`
+### Attention
+
++ Even if `imagemagick` or` graphicsmagick` is not installed, `express` itself starts, but the image is not displayed and only a blank page is displayed.
 
 ## Anything Else
 
